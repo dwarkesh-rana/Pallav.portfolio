@@ -47,7 +47,7 @@ export default function Experience() {
                             </div>
 
                             {/* Central node pin point */}
-                            <div className="absolute left-3.5 md:left-[115px] p-1 bg-accent-primary rounded-full border border-bg-primary shadow-xs z-10" />
+                            <div className="absolute left-3 md:left-[114px] top-7 md:top-1.5 w-2.5 h-2.5 bg-accent-primary rounded-full border border-bg-primary shadow-xs z-10" />
 
                             {/* Main detail content block (Column Right) */}
                             <motion.div

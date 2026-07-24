@@ -126,27 +126,33 @@ export default function About() {
                         </div>
 
                         {/* 3 Grid mini stats */}
-                        <div className="grid grid-cols-3 gap-4 pt-4">
-                            <div className="flex flex-col p-4 rounded-lg bg-bg-primary border border-border-primary text-center">
-                                <GraduationCap className="w-5 h-5 text-accent-primary mx-auto mb-2" />
-                                <span className="text-[10px] uppercase font-bold tracking-wider text-text-muted">
+                        <div className="grid grid-cols-3 gap-2 sm:gap-4 pt-4">
+                            <div className="flex flex-col p-2.5 sm:p-4 rounded-lg bg-bg-primary border border-border-primary text-center min-w-0">
+                                <GraduationCap className="w-4 h-4 sm:w-5 sm:h-5 text-accent-primary mx-auto mb-1.5 sm:mb-2 shrink-0" />
+                                <span className="text-[9px] sm:text-[10px] uppercase font-bold tracking-wider text-text-muted truncate">
                                     Degree
                                 </span>
-                                <span className="text-sm font-bold text-text-primary mt-1">B.Com</span>
+                                <span className="text-xs sm:text-sm font-bold text-text-primary mt-0.5 sm:mt-1 truncate">
+                                    B.Com
+                                </span>
                             </div>
-                            <div className="flex flex-col p-4 rounded-lg bg-bg-primary border border-border-primary text-center">
-                                <BookOpen className="w-5 h-5 text-accent-primary mx-auto mb-2" />
-                                <span className="text-[10px] uppercase font-bold tracking-wider text-text-muted">
+                            <div className="flex flex-col p-2.5 sm:p-4 rounded-lg bg-bg-primary border border-border-primary text-center min-w-0">
+                                <BookOpen className="w-4 h-4 sm:w-5 sm:h-5 text-accent-primary mx-auto mb-1.5 sm:mb-2 shrink-0" />
+                                <span className="text-[9px] sm:text-[10px] uppercase font-bold tracking-wider text-text-muted truncate">
                                     Languages
                                 </span>
-                                <span className="text-sm font-bold text-text-primary mt-1">Trilingual</span>
+                                <span className="text-xs sm:text-sm font-bold text-text-primary mt-0.5 sm:mt-1 truncate">
+                                    Trilingual
+                                </span>
                             </div>
-                            <div className="flex flex-col p-4 rounded-lg bg-bg-primary border border-border-primary text-center">
-                                <Award className="w-5 h-5 text-accent-primary mx-auto mb-2" />
-                                <span className="text-[10px] uppercase font-bold tracking-wider text-text-muted">
+                            <div className="flex flex-col p-2.5 sm:p-4 rounded-lg bg-bg-primary border border-border-primary text-center min-w-0">
+                                <Award className="w-4 h-4 sm:w-5 sm:h-5 text-accent-primary mx-auto mb-1.5 sm:mb-2 shrink-0" />
+                                <span className="text-[9px] sm:text-[10px] uppercase font-bold tracking-wider text-text-muted truncate">
                                     Focus
                                 </span>
-                                <span className="text-sm font-bold text-text-primary mt-1">Accuracy</span>
+                                <span className="text-xs sm:text-sm font-bold text-text-primary mt-0.5 sm:mt-1 truncate">
+                                    Accuracy
+                                </span>
                             </div>
                         </div>
                     </div>

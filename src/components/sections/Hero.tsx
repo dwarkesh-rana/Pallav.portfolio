@@ -159,43 +159,43 @@ export default function Hero() {
                                 Client Summary Card
                             </h2>
 
-                            <div className="space-y-6">
+                            <div className="space-y-4 sm:space-y-5">
                                 {/* Years Experience Vitals */}
-                                <div className="flex justify-between items-center pb-4 border-b border-border-primary/50">
-                                    <span className="text-xs font-semibold text-text-secondary uppercase tracking-wider">
+                                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start pb-3.5 border-b border-border-primary/50 gap-0.5 sm:gap-3 text-left">
+                                    <span className="text-xs font-semibold text-text-secondary uppercase tracking-wider shrink-0">
                                         Experience
                                     </span>
-                                    <span className="text-sm font-bold text-text-primary">
+                                    <span className="text-[13px] sm:text-sm font-bold text-text-primary sm:text-right">
                                         1.5+ Years under Advocate
                                     </span>
                                 </div>
 
                                 {/* Primary Work Sector */}
-                                <div className="flex justify-between items-center pb-4 border-b border-border-primary/50">
-                                    <span className="text-xs font-semibold text-text-secondary uppercase tracking-wider">
+                                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start pb-3.5 border-b border-border-primary/50 gap-0.5 sm:gap-3 text-left">
+                                    <span className="text-xs font-semibold text-text-secondary uppercase tracking-wider shrink-0">
                                         Specialization
                                     </span>
-                                    <span className="text-sm font-bold text-text-primary">
+                                    <span className="text-[13px] sm:text-sm font-bold text-text-primary sm:text-right">
                                         Legal & Property Docs
                                     </span>
                                 </div>
 
                                 {/* Qualification Base */}
-                                <div className="flex justify-between items-center pb-4 border-b border-border-primary/50">
-                                    <span className="text-xs font-semibold text-text-secondary uppercase tracking-wider">
+                                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start pb-3.5 border-b border-border-primary/50 gap-0.5 sm:gap-3 text-left">
+                                    <span className="text-xs font-semibold text-text-secondary uppercase tracking-wider shrink-0">
                                         Qualification
                                     </span>
-                                    <span className="text-sm font-bold text-text-primary">
+                                    <span className="text-[13px] sm:text-sm font-bold text-text-primary sm:text-right">
                                         B.Com (Commerce)
                                     </span>
                                 </div>
 
                                 {/* Region */}
-                                <div className="flex justify-between items-center">
-                                    <span className="text-xs font-semibold text-text-secondary uppercase tracking-wider">
+                                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-0.5 sm:gap-3 text-left">
+                                    <span className="text-xs font-semibold text-text-secondary uppercase tracking-wider shrink-0">
                                         Base location
                                     </span>
-                                    <span className="text-sm font-bold text-accent-primary">
+                                    <span className="text-[13px] sm:text-sm font-bold text-accent-primary sm:text-right">
                                         Bhavnagar, Gujarat
                                     </span>
                                 </div>
