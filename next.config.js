@@ -2,8 +2,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     reactStrictMode: true,
-    swcMinify: true,
-
     // Asset caching headers for static files
     async headers() {
         return [
