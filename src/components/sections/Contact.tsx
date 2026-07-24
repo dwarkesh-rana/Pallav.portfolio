@@ -36,10 +36,10 @@ export default function Contact() {
     return (
         <section
             id="contact"
-            className="py-24 bg-bg-secondary/20 border-y border-border-primary/50 relative"
+            className="py-16 sm:py-24 bg-bg-secondary/20 border-y border-border-primary/50 relative"
         >
             <div className="mx-auto max-w-(--container-width-max) px-6 md:px-8">
-                <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16 items-start">
+                <div className="grid grid-cols-1 gap-8 sm:gap-12 lg:grid-cols-12 lg:gap-16 items-start">
                     {/* Left Column Description Context */}
                     <div className="lg:col-span-5 flex flex-col space-y-6 text-left">
                         <div>
@@ -78,17 +78,17 @@ export default function Contact() {
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-5 rounded-lg border border-border-primary bg-bg-primary shadow-2xs hover:border-accent-primary/20 transition-all"
+                            className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-4.5 sm:p-5 rounded-lg border border-border-primary bg-bg-primary shadow-2xs hover:border-accent-primary/20 transition-all"
                         >
-                            <div className="flex items-center gap-4">
-                                <div className="p-3 bg-accent-primary/5 rounded-md border border-accent-primary/10">
-                                    <Mail className="w-5 h-5 text-accent-primary" />
+                            <div className="flex items-center gap-3 sm:gap-4 w-full sm:w-auto">
+                                <div className="p-2.5 sm:p-3 bg-accent-primary/5 rounded-md border border-accent-primary/10 shrink-0">
+                                    <Mail className="w-4.5 h-4.5 sm:w-5 sm:h-5 text-accent-primary" />
                                 </div>
-                                <div className="text-left">
-                                    <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-text-muted">
+                                <div className="text-left min-w-0">
+                                    <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-text-muted block">
                                         Email Address
                                     </span>
-                                    <div className="font-serif text-sm sm:text-base font-bold text-text-primary mt-0.5">
+                                    <div className="font-serif text-[13px] xs:text-sm sm:text-base font-bold text-text-primary mt-0.5 break-all">
                                         pallavzapadiya97@gmail.com
                                     </div>
                                 </div>
@@ -120,17 +120,17 @@ export default function Contact() {
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-5 rounded-lg border border-border-primary bg-bg-primary shadow-2xs hover:border-accent-primary/20 transition-all"
+                            className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-4.5 sm:p-5 rounded-lg border border-border-primary bg-bg-primary shadow-2xs hover:border-accent-primary/20 transition-all"
                         >
-                            <div className="flex items-center gap-4">
-                                <div className="p-3 bg-accent-primary/5 rounded-md border border-accent-primary/10">
-                                    <MessageSquare className="w-5 h-5 text-accent-primary" />
+                            <div className="flex items-center gap-3 sm:gap-4 w-full sm:w-auto">
+                                <div className="p-2.5 sm:p-3 bg-accent-primary/5 rounded-md border border-accent-primary/10 shrink-0">
+                                    <MessageSquare className="w-4.5 h-4.5 sm:w-5 sm:h-5 text-accent-primary" />
                                 </div>
-                                <div className="text-left">
-                                    <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-text-muted">
+                                <div className="text-left min-w-0">
+                                    <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-text-muted block">
                                         WhatsApp Message
                                     </span>
-                                    <div className="font-serif text-sm sm:text-base font-bold text-text-primary mt-0.5">
+                                    <div className="font-serif text-[13px] xs:text-sm sm:text-base font-bold text-text-primary mt-0.5 break-all">
                                         +91 97236 39597 (Quick-chat)
                                     </div>
                                 </div>
@@ -162,17 +162,17 @@ export default function Contact() {
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-5 rounded-lg border border-border-primary bg-bg-primary shadow-2xs hover:border-accent-primary/20 transition-all"
+                            className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-4.5 sm:p-5 rounded-lg border border-border-primary bg-bg-primary shadow-2xs hover:border-accent-primary/20 transition-all"
                         >
-                            <div className="flex items-center gap-4">
-                                <div className="p-3 bg-accent-primary/5 rounded-md border border-accent-primary/10">
-                                    <Phone className="w-5 h-5 text-accent-primary" />
+                            <div className="flex items-center gap-3 sm:gap-4 w-full sm:w-auto">
+                                <div className="p-2.5 sm:p-3 bg-accent-primary/5 rounded-md border border-accent-primary/10 shrink-0">
+                                    <Phone className="w-4.5 h-4.5 sm:w-5 sm:h-5 text-accent-primary" />
                                 </div>
-                                <div className="text-left">
-                                    <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-text-muted">
+                                <div className="text-left min-w-0">
+                                    <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-text-muted block">
                                         Phone Network
                                     </span>
-                                    <div className="font-serif text-sm sm:text-base font-bold text-text-primary mt-0.5">
+                                    <div className="font-serif text-[13px] xs:text-sm sm:text-base font-bold text-text-primary mt-0.5 break-all">
                                         +91 97236 39597 (Call direct)
                                     </div>
                                 </div>

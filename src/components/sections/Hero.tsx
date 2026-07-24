@@ -49,7 +49,7 @@ export default function Hero() {
     return (
         <section
             id="home"
-            className="relative flex min-h-screen items-center justify-center pt-24 pb-16 overflow-hidden bg-bg-primary"
+            className="relative flex min-h-screen items-center justify-center pt-28 pb-12 sm:pt-36 sm:pb-20 overflow-hidden bg-bg-primary"
         >
             {/* Background Micro Grid Layer (Tailwind pure CSS) */}
             <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,var(--color-bg-tertiary)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-bg-tertiary)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-30" />
@@ -59,7 +59,7 @@ export default function Hero() {
                     variants={containerVariants}
                     initial="hidden"
                     animate="visible"
-                    className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-8 items-center"
+                    className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-8 items-center"
                 >
                     {/* Left Column Description Stack */}
                     <div className="lg:col-span-7 flex flex-col items-start text-left">
@@ -78,7 +78,7 @@ export default function Hero() {
                         {/* Client Display Name */}
                         <motion.h1
                             variants={itemVariants}
-                            className="mt-6 font-serif text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-text-primary leading-[1.1]"
+                            className="mt-5 font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-text-primary leading-[1.1]"
                         >
                             Hi, I'm <span className="text-accent-primary">{RESUME_DATA.name}</span>
                         </motion.h1>
@@ -86,7 +86,7 @@ export default function Hero() {
                         {/* List of Titles */}
                         <motion.p
                             variants={itemVariants}
-                            className="mt-4 font-sans text-lg sm:text-xl font-semibold tracking-wide text-text-secondary uppercase"
+                            className="mt-3.5 font-sans text-base sm:text-xl font-semibold tracking-wide text-text-secondary uppercase"
                         >
                             {RESUME_DATA.titles.join(' \u2022 ')}
                         </motion.p>
@@ -94,7 +94,7 @@ export default function Hero() {
                         {/* Short Bio Hook */}
                         <motion.p
                             variants={itemVariants}
-                            className="mt-6 max-w-xl text-base text-text-secondary leading-relaxed font-sans"
+                            className="mt-5 max-w-xl text-sm sm:text-base text-text-secondary leading-relaxed font-sans"
                         >
                             Commerce graduate specializing in legal document Drafting, title search verifications, property registries file compilation, and professional assistant support in Bhavnagar, Gujarat.
                         </motion.p>
@@ -102,7 +102,7 @@ export default function Hero() {
                         {/* Location Tag */}
                         <motion.div
                             variants={itemVariants}
-                            className="mt-6 inline-flex items-center gap-1.5 text-sm text-text-muted"
+                            className="mt-5 inline-flex items-center gap-1.5 text-xs sm:text-sm text-text-muted"
                         >
                             <MapPin className="w-4 h-4 text-accent-primary" />
                             <span>{RESUME_DATA.location.city}, {RESUME_DATA.location.state}</span>
@@ -111,12 +111,12 @@ export default function Hero() {
                         {/* Action Badges Triggers */}
                         <motion.div
                             variants={itemVariants}
-                            className="mt-8 flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
+                            className="mt-6 flex flex-col sm:flex-row gap-3 w-full sm:w-auto"
                         >
                             <a
                                 href="#contact"
                                 onClick={handleScrollToContact}
-                                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-accent-primary hover:bg-accent-hover text-bg-primary text-sm font-bold uppercase tracking-wider rounded-lg shadow-sm hover:shadow-md transition-all duration-300 group cursor-pointer"
+                                className="inline-flex items-center justify-center gap-2 px-5 py-3.5 bg-accent-primary hover:bg-accent-hover text-bg-primary text-xs sm:text-sm font-bold uppercase tracking-wider rounded-lg shadow-sm hover:shadow-md transition-all duration-300 group cursor-pointer"
                             >
                                 Inquire Directly
                                 <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -128,18 +128,18 @@ export default function Hero() {
                                     href="/resume_pallav_premium.pdf"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-4 py-3.5 border border-border-primary hover:border-accent-primary/50 text-text-secondary hover:text-text-primary text-xs font-semibold uppercase tracking-wider rounded-lg bg-bg-secondary/30 transition-all duration-300"
+                                    className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-3.5 py-3 border border-border-primary hover:border-accent-primary/50 text-text-secondary hover:text-text-primary text-[11px] sm:text-xs font-semibold uppercase tracking-wider rounded-lg bg-bg-secondary/30 transition-all duration-300"
                                 >
-                                    <FileText className="w-4 h-4 text-accent-primary" />
+                                    <FileText className="w-3.5 h-3.5 text-accent-primary" />
                                     Premium PDF
                                 </a>
                                 <a
                                     href="/resume_pallav_ats.pdf"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-4 py-3.5 border border-border-primary hover:border-accent-primary/50 text-text-secondary hover:text-text-primary text-xs font-semibold uppercase tracking-wider rounded-lg bg-bg-secondary/30 transition-all duration-300"
+                                    className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-3.5 py-3 border border-border-primary hover:border-accent-primary/50 text-text-secondary hover:text-text-primary text-[11px] sm:text-xs font-semibold uppercase tracking-wider rounded-lg bg-bg-secondary/30 transition-all duration-300"
                                 >
-                                    <FileText className="w-4 h-4 text-text-muted" />
+                                    <FileText className="w-3.5 h-3.5 text-text-muted" />
                                     ATS PDF
                                 </a>
                             </div>

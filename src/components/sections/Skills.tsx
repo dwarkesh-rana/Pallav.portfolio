@@ -22,14 +22,14 @@ const getCategoryIcon = (category: string) => {
 
 export default function Skills() {
     return (
-        <section id="skills" className="py-24 bg-bg-secondary/20 border-y border-border-primary/50">
+        <section id="skills" className="py-16 sm:py-24 bg-bg-secondary/20 border-y border-border-primary/50">
             <div className="mx-auto max-w-(--container-width-max) px-6 md:px-8">
                 {/* Section Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 15 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: '-10% 0px' }}
-                    className="text-left mb-16"
+                    className="text-left mb-10 sm:mb-16"
                 >
                     <span className="font-sans text-xs font-bold uppercase tracking-wider text-accent-primary">
                         03 / Profile
@@ -43,7 +43,7 @@ export default function Skills() {
                 </motion.div>
 
                 {/* 4-Column Grid for Technical/Functional Capabilities */}
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                <div className="grid grid-cols-1 gap-4.5 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4">
                     {RESUME_DATA.skills.technical.map((skillGroup, idx) => (
                         <motion.div
                             key={idx}

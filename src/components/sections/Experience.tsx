@@ -8,14 +8,14 @@ import { Briefcase, Calendar, Building2, FileText, CheckCircle2 } from 'lucide-r
 
 export default function Experience() {
     return (
-        <section id="experience" className="py-24 bg-bg-primary">
+        <section id="experience" className="py-16 sm:py-24 bg-bg-primary">
             <div className="mx-auto max-w-(--container-width-max) px-6 md:px-8">
                 {/* Header Block Title */}
                 <motion.div
                     initial={{ opacity: 0, y: 15 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: '-10% 0px' }}
-                    className="text-left mb-16"
+                    className="text-left mb-10 sm:mb-16"
                 >
                     <span className="font-sans text-xs font-bold uppercase tracking-wider text-accent-primary">
                         02 / History

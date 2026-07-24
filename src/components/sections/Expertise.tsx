@@ -65,14 +65,14 @@ export default function Expertise() {
     }
 
     return (
-        <section id="expertise" className="py-24 bg-bg-primary">
+        <section id="expertise" className="py-16 sm:py-24 bg-bg-primary">
             <div className="mx-auto max-w-(--container-width-max) px-6 md:px-8">
                 {/* Section Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 15 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: '-10% 0px' }}
-                    className="text-left mb-16"
+                    className="text-left mb-10 sm:mb-16"
                 >
                     <span className="font-sans text-xs font-bold uppercase tracking-wider text-accent-primary">
                         04 / Workflow
@@ -86,7 +86,7 @@ export default function Expertise() {
                 </motion.div>
 
                 {/* 3-Column Card Layout */}
-                <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+                <div className="grid grid-cols-1 gap-6 sm:gap-8 lg:grid-cols-3">
                     {WORKFLOWS.map((flow, index) => (
                         <motion.div
                             key={index}

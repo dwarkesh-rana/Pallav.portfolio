@@ -6,17 +6,17 @@ import { GraduationCap, Award, BookOpen } from 'lucide-react'
 
 export default function About() {
     return (
-        <section id="about" className="py-24 bg-bg-secondary/20 border-y border-border-primary/50">
+        <section id="about" className="py-16 sm:py-24 bg-bg-secondary/20 border-y border-border-primary/50">
             <div className="mx-auto max-w-(--container-width-max) px-6 md:px-8">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: '-10% 0px' }}
                     transition={{ duration: 0.6 }}
-                    className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16 items-start"
+                    className="grid grid-cols-1 gap-8 sm:gap-12 lg:grid-cols-12 lg:gap-16 items-start"
                 >
                     {/* Left Column Education Table & Icon details */}
-                    <div className="lg:col-span-5 flex flex-col space-y-8">
+                    <div className="lg:col-span-5 flex flex-col space-y-6 sm:space-y-8">
                         <div>
                             <span className="font-sans text-xs font-bold uppercase tracking-wider text-accent-primary">
                                 01 / Credentials
@@ -29,8 +29,35 @@ export default function About() {
                             </p>
                         </div>
 
-                        {/* Structured Table Layout representing credentials */}
-                        <div className="overflow-hidden rounded-lg border border-border-primary bg-bg-primary/50 shadow-xs">
+                        {/* Mobile Stack (Shown below sm) */}
+                        <div className="space-y-4 sm:hidden">
+                            {RESUME_DATA.educationHistory.map((edu, idx) => (
+                                <div key={idx} className="rounded-lg border border-border-primary bg-bg-primary/60 p-4.5 shadow-2xs">
+                                    <div className="flex justify-between items-start gap-2 border-b border-border-primary/40 pb-2 mb-2">
+                                        <div>
+                                            <span className="font-bold text-text-primary text-xs sm:text-sm tracking-tight leading-tight block">
+                                                {edu.degree}
+                                            </span>
+                                            <span className="block text-[10px] text-text-muted mt-0.5">
+                                                {edu.year}
+                                            </span>
+                                        </div>
+                                        <span className="shrink-0 text-xs font-bold text-accent-primary bg-accent-primary/5 px-2 py-0.5 border border-accent-primary/10 rounded-sm">
+                                            {edu.score}
+                                        </span>
+                                    </div>
+                                    <div className="text-xs text-text-secondary leading-snug">
+                                        {edu.institution}
+                                    </div>
+                                    <div className="text-[10px] text-text-muted mt-1 leading-snug">
+                                        {edu.boardOrUniversity}
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* Structured Table Layout representing credentials (desktop) */}
+                        <div className="hidden sm:block overflow-hidden rounded-lg border border-border-primary bg-bg-primary/50 shadow-xs">
                             <div className="overflow-x-auto">
                                 <table className="w-full text-left border-collapse">
                                     <thead>
